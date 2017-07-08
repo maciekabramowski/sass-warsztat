@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #001d8a;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../img/background.png);
+  background-size: cover; }
+
+header, section {
+  width: 100%; }
