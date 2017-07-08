@@ -1,22 +1,32 @@
-div.form {
-  position: absolute;
-  top: 150px;
-  right: 70px;
-  width: 260px;
+.form-section {
+  background-image: url(../img/background.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
   color: #fff; }
-  div.form h3 {
-    margin-top: 0;
-    font-size: 1em; }
-    div.form h3 span {
-      color: #ecd407; }
-  div.form div {
-    background-color: #001d8a;
-    padding: 10px; }
-    div.form div form input {
-      display: block;
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px; }
-    div.form div form textarea {
-      width: 100%;
-      padding: 5px; }
+  .form-section .form-section-right {
+    position: absolute;
+    right: 8%;
+    width: 370px;
+    top: 25%; }
+  .form-section #main-form {
+    background-color: #001d8a; }
+    .form-section #main-form fieldset {
+      border-style: none; }
+      .form-section #main-form fieldset input:not([type="submit"]),
+      .form-section #main-form fieldset textarea {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: "Open Sans", sans-serif; }
+      .form-section #main-form fieldset input[type="submit"] {
+        padding: 20px;
+        background-color: #ecd407;
+        font-size: 1.2em;
+        font-weight: 700;
+        border: 0px solid #fff;
+        margin-bottom: 10px;
+        transition: all .3s; }
+        .form-section #main-form fieldset input[type="submit"]:hover {
+          background-color: #fff;
+          cursor: pointer; }

@@ -1,32 +1,71 @@
 @import "variables";
 @import "mixins";
 
-div.form{
-    position: absolute;
-    top: 150px;
-    right: 70px;
-    width: 260px;
+//div.form{
+//    position: absolute;
+//    top: 150px;
+//    right: 70px;
+//    width: 260px;
+//    color: #fff;
+//    h3{
+//        margin-top: 0;
+//        font-size: 1em;
+//        span{
+//            color: $yellow-color;
+//        }
+//    }
+//    div{
+//        background-color: $main-color;
+//        padding: 10px;
+//        form{
+//            input{
+//                display: block;
+//                width: 100%;
+//                padding: 5px;
+//                margin-bottom: 10px;
+//            }
+//            textarea{
+//                width: 100%;
+//                padding: 5px;
+//            }
+//        }
+//    }
+//}
+
+.form-section {
+    background-image: url(../img/background.png);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    
     color: #fff;
-    h3{
-        margin-top: 0;
-        font-size: 1em;
-        span{
-            color: $yellow-color;
-        }
+    
+    .form-section-right {
+        @include right-col-elements;
+        top: 25%;
     }
-    div{
+    
+    #main-form {
         background-color: $main-color;
-        padding: 10px;
-        form{
-            input{
-                display: block;
-                width: 100%;
-                padding: 5px;
-                margin-bottom: 10px;
-            }
+        
+        fieldset{
+            border-style: none;
+            
+            input:not([type="submit"]),
             textarea{
-                width: 100%;
-                padding: 5px;
+                @include inputs;
+                margin-bottom: 10px;
+                font-family: $main-font;
+            }
+            input[type="submit"]{
+                @include inputs-submit;
+                margin-bottom: 10px;
+                transition: all .3s;
+                
+                &:hover{
+                    background-color: #fff;
+                    cursor: pointer;
+                }
             }
         }
     }

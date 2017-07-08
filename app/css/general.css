@@ -4,9 +4,21 @@
 body {
   background-color: #001d8a;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
-  background-image: url(../img/background.png);
-  background-size: cover; }
+  font-family: "Open Sans", sans-serif; }
 
 header, section {
   width: 100%; }
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%; }
+
+.yellow {
+  color: #ecd407; }
+
+.col-1-2 {
+  width: 50%;
+  float: left; }
